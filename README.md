@@ -31,7 +31,7 @@
 
     Запусти модель:
 
-    python model.py
+    python main.py
 
 ## Оценка модели
 
