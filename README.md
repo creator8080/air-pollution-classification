@@ -21,15 +21,15 @@
 
     Клонируй репозиторий:
 
-git clone https://github.com/username/repository-name.git
+    git clone https://github.com/username/repository-name.git
 
-Установи зависимости:
+    Установи зависимости:
 
-pip install -r requirements.txt
+    pip install -r requirements.txt
 
-Скачай данные и размести их в папке с проектом (например, data.csv).
+    Скачай данные и размести их в папке с проектом (например, data.csv).
 
-Запусти модель:
+    Запусти модель:
 
     python model.py
 
