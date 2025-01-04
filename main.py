@@ -7,16 +7,14 @@ import matplotlib.pyplot as plt
 from sklearn.metrics import roc_curve, auc, classification_report
 import numpy as np
 
-# Чтение данных из CSV файла
 df = pd.read_csv('data.csv')
 
-# Преобразование столбца 'Air Quality' в числовые категории
 df['Air Quality'], _ = pd.factorize(df['Air Quality'])
 
 # Определение диапазонов гиперпараметров для GridSearch
 param_grid = {
-    'n_estimators': [10,50,100],  # Количество деревьев в модели
-    'max_depth': [3,4,5]  # Глубина каждого дерева
+    'n_estimators': [10,50,100],  
+    'max_depth': [3,4,5]  
 }
 
 random_state = 42
@@ -28,13 +26,11 @@ y = df['Air Quality']
 # Разделение данных на обучающую и тестовую выборки (25% данных для теста)
 X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.25, random_state=random_state)
 
-# Инициализация модели (GradientBoosting)
 model = GradientBoostingClassifier(random_state=random_state)
 
 # Настройка GridSearchCV для поиска оптимальных гиперпараметров
 cv_search = GridSearchCV(model, param_grid, cv=3, scoring='accuracy')
 
-# Обучение модели с использованием кросс-валидации
 cv_search.fit(X_train, y_train)
 
 # Получение лучших параметров и самой лучшей модели
@@ -44,7 +40,6 @@ best_model = cv_search.best_estimator_
 # Прогнозирование на тестовых данных
 y_pred = best_model.predict(X_test)
 
-# Вывод лучших параметров модели
 print(f'Best params: {best_params}')
 
 # Оценка точности, точности по классу и F1-меры
