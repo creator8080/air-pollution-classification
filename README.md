@@ -49,6 +49,4 @@
     scikit-learn
     matplotlib
 
-Автор
-
-Проект разработан creator8080.
+**Проект разработан creator8080.**
