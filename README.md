@@ -43,7 +43,7 @@
     Confusion Matrix: матрица ошибок
     Classification Report: отчет по классификации
 
-Требования
+## Библиотеки
 
     pandas
     scikit-learn
