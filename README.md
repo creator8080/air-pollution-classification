@@ -48,5 +48,6 @@
     pandas
     scikit-learn
     matplotlib
+    seaborn
 
 **Проект разработан creator8080.**
