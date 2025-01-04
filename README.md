@@ -21,7 +21,7 @@
 
     Клонируй репозиторий:
 
-    git clone https://github.com/username/repository-name.git
+    git clone https://github.com/creator8080/air-pollution-classification.git
 
     Установи зависимости:
 
