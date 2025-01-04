@@ -1,4 +1,3 @@
-# air-pollution-classification
 # Air Quality and Pollution Assessment
 
 ## Описание
